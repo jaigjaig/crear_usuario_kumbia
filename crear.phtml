@@ -1,0 +1,17 @@
+<?php View::content() ?>
+<h1>Crear Usuario</h1>
+<?php echo Form::open() ?>
+<div class="form-group">
+	<label>Nombre de Usuario:</label><br>
+	<?php echo Form::text("usuario.usuario_nombre") ?>
+</div>
+<div class="form-group">
+	<label>Contraseña:</label><br>
+	<?php echo Form::pass("usuario.usuario_password") ?>
+</div>
+<div class="form-group">
+	<label>Repetir Contraseña:</label><br>
+	<?php echo Form::pass("usuario.usuario_password2") ?>
+</div>
+<?php echo Form::submit("Crear") ?>
+<?php echo Form::close() ?>
